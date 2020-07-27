@@ -11,7 +11,8 @@ export const Background = styled.div`
   background-size: contain;
   height: 30vh;
   width: 100vw;
-  position: fixed;
+  position: relative;
+  z-index: 1;
   ::after {
     height: 31vh;
     width: 100vw;

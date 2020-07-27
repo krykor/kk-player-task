@@ -11,7 +11,11 @@ export const GlobalStyles = createGlobalStyle`
     min-width: 100vw;
     min-height: 100vh;
     background-color: ${({ theme }) => theme.background};
-  }
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    font-size: ${({ theme }) => theme.fontM}
+
+    }
   *, *::after, *::before {
     box-sizing: border-box;
   }
