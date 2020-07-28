@@ -5,7 +5,7 @@ import { GlobalStyles } from './styles/global';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './styles/theme';
 
-import { Header, Slider } from './components';
+import { Header, Slider, Description } from './components';
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
       <StyledApp>
         <Header />
         <Slider />
+        <Description />
       </StyledApp>
     </ThemeProvider>
   );
