@@ -1,6 +1,8 @@
 export const theme = {
   primary: '#6f729c',
   secondary: '#f0f0f2',
+  dark: '#9a9b9b',
+  timelineColor: '#00c9b7',
   background: '#1f1937',
   backgroundRGB: 'rgb(31, 25, 55)',
   backgroundGradient:
