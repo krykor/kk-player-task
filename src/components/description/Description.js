@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyledDescription, Title, Artist } from './Description.styled';
 
-const Header = () => {
+const Description = () => {
   return (
     <StyledDescription>
       <Title>test</Title>
@@ -10,4 +10,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Description;

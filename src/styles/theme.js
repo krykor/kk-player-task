@@ -19,4 +19,7 @@ export const theme = {
   marginL: '24px',
   marginXL: '30px',
   marginXXL: '36px',
+
+  buttonSVG: '20px',
+  buttonPNG: '180px',
 };
