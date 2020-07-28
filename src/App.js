@@ -5,15 +5,16 @@ import { GlobalStyles } from './styles/global';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './styles/theme';
 
-import { Header } from './components';
+import { Header, Slider } from './components';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
+      <Background />
       <StyledApp>
         <Header />
-        <Background />
+        <Slider />
       </StyledApp>
     </ThemeProvider>
   );

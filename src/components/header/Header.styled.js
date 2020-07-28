@@ -8,7 +8,7 @@ export const StyledHeader = styled.div`
   height: 100px;
   width: 100vw;
   top: 0px;
-  position: absolute;
+  position: relative;
   font-weight: bold;
   text-align: center;
   img {
