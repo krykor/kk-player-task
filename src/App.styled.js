@@ -3,11 +3,12 @@ import img from './assets/images/bg_image.jpg';
 
 export const StyledApp = styled.main`
   min-width: 100vw;
-  min-height: 100vh;
+  height: calc(100vh - 100px);
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 100px;
 `;
 
 export const Background = styled.div`

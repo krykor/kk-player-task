@@ -23,8 +23,8 @@ function App() {
         <GlobalStyles />
         <Background />
         <Audio />
+        <Header />
         <StyledApp>
-          <Header />
           <Slider />
           <Description />
           <Buttons />

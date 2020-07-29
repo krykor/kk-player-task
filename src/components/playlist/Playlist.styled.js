@@ -8,7 +8,7 @@ export const StyledPlaylist = styled.div`
   height: 90px;
   width: 100vw;
   bottom: 0px;
-  position: absolute;
+  position: fixed;
   background-color: ${({ theme }) => theme.secondary};
   img {
     max-width: 30px;

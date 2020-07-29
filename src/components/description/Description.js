@@ -4,13 +4,13 @@ import Context from '../../store/PlaylistContext';
 
 const Description = () => {
   const {
-    filteredList: { title, album },
+    filteredList: { title, author },
   } = useContext(Context);
 
   return (
     <StyledDescription>
       <Title>{title}</Title>
-      <Artist>{album}</Artist>
+      <Artist>{author}</Artist>
     </StyledDescription>
   );
 };

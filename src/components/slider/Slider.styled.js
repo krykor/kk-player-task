@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const StyledSlider = styled.div`
   z-index: 20;
   position: relative;
-  margin-top: 20px;
   min-width: 100vw;
   img {
     max-width: 200px;

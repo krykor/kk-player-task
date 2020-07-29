@@ -6,7 +6,9 @@ export const StyledPlayerButtons = styled.div`
   align-items: center;
   flex-direction: row;
   margin: ${({ theme }) => theme.marginM};
-  width: 80vw;
+  width: 95vw;
+  max-height: 80px;
+  z-index: 20;
 `;
 
 export const Button = styled.button`

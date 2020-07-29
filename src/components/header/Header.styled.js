@@ -9,9 +9,13 @@ export const StyledHeader = styled.div`
   width: 100vw;
   top: 0px;
   position: relative;
-  font-weight: bold;
   text-align: center;
+  div {
+    flex-grow: 2;
+    max-width: 50vw;
+  }
   img {
+    flex-grow: 1;
     max-width: 30px;
     max-height: 30px;
   }
@@ -21,6 +25,7 @@ export const HeaderText = styled.p`
   color: ${({ theme }) => theme.primary};
   margin: ${({ theme }) => theme.marginS};
   text-transform: uppercase;
+  font-weight: normal;
 `;
 
 export const SongTitle = styled.p`

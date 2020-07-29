@@ -7,14 +7,14 @@ import more from '../../assets/images/more_ico.svg';
 
 const Header = () => {
   const {
-    filteredList: { title },
+    filteredList: { album },
   } = useContext(Context);
   return (
     <StyledHeader>
       <img src={back} alt="back" />
       <div>
         <HeaderText>Album</HeaderText>
-        <SongTitle>{title}</SongTitle>
+        <SongTitle>{album}</SongTitle>
       </div>
       <img src={more} alt="more" />
     </StyledHeader>
