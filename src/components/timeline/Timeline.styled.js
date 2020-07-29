@@ -34,6 +34,24 @@ export const StyledTimeline = styled.div`
       box-shadow: -1000px 0px 0px 1000px ${({ theme }) => theme.timelineColor};
       cursor: pointer;
     }
+    ::-moz-range-thumb {
+      -moz-appearance: none;
+      width: 0;
+      height: 0;
+      cursor: pointer;
+    }
+    ::-moz-range-track {
+      background-color: ${({ theme }) => theme.timelineColor};
+      color: ${({ theme }) => theme.timelineColor};
+      height: 2px;
+      cursor: pointer;
+    }
+    ::-moz-range-progress {
+      background-color: ${({ theme }) => theme.timelineColor};
+      height: 10px;
+      cursor: pointer;
+    }
+
     :focus {
       outline: none;
     }
