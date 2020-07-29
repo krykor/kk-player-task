@@ -1,21 +1,40 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { StyledTimeline, Counter } from './Timeline.styled';
+import Context from '../../store/PlaylistContext';
 
 const Timeline = () => {
-  const [value, setValue] = useState(0);
-  console.log(value);
+  const {
+    songTime: { currentTime, duration },
+    changeControlStatus,
+    changeSongTime,
+  } = useContext(Context);
+
+  const setValue = (e) => {
+    changeControlStatus('changeValue');
+    changeSongTime({
+      currentTime: e.target.value,
+      duration: duration,
+    });
+  };
+
+  const getTime = (time) =>
+    duration > 0
+      ? !isNaN(time) &&
+        Math.floor(time / 60) + ':' + ('0' + Math.floor(time % 60)).slice(-2)
+      : '0:00';
+
   return (
     <StyledTimeline>
-      <Counter>5:78</Counter>
+      <Counter>{getTime(currentTime)}</Counter>
       <input
         type="range"
         id="progress-bar"
         min="0"
-        max=""
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
+        max={duration}
+        value={currentTime}
+        onChange={(e) => setValue(e)}
       />
-      <Counter>5:78</Counter>
+      <Counter>{getTime(duration)}</Counter>
     </StyledTimeline>
   );
 };

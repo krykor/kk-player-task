@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "title": "Self Conscious",
+    "author": "Kanye West",
+    "album": "Unreleased",
+    "photo": "unreleased_cover.png"
+  },
+  {
+    "id": "2",
+    "title": "Stronger",
+    "author": "Kanye West",
+    "album": "Late Registraction",
+    "photo": "cover-1.png"
+  },
+  {
+    "id": "3",
+    "title": "Eyes of a Panther",
+    "author": "Steel Panther",
+    "album": "Feel the Steel",
+    "photo": "cover.png"
+  }
+]

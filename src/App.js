@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyledApp, Background } from './App.styled';
+import GlobalState from './store/GlobalState';
 
 import { GlobalStyles } from './styles/global';
 import { ThemeProvider } from 'styled-components';
@@ -12,22 +13,26 @@ import {
   Buttons,
   Timeline,
   Playlist,
+  Audio,
 } from './components';
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <Background />
-      <StyledApp>
-        <Header />
-        <Slider />
-        <Description />
-        <Buttons />
-        <Timeline />
-        <Playlist />
-      </StyledApp>
-    </ThemeProvider>
+    <GlobalState>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Background />
+        <Audio />
+        <StyledApp>
+          <Header />
+          <Slider />
+          <Description />
+          <Buttons />
+          <Timeline />
+          <Playlist />
+        </StyledApp>
+      </ThemeProvider>
+    </GlobalState>
   );
 }
 

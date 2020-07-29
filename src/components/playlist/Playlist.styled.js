@@ -17,7 +17,7 @@ export const StyledPlaylist = styled.div`
 `;
 
 export const SongDescription = styled.div`
-  width: 40vw;
+  width: 70vw;
 `;
 
 export const HeaderText = styled.p`

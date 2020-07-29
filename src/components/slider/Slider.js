@@ -1,30 +1,43 @@
-import React from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import { StyledSlider } from './Slider.styled';
+import Context from '../../store/PlaylistContext';
+
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
 
-import cover1 from '../../assets/images/unreleased_cover.png';
-import cover2 from '../../assets/images/cover.png';
-import cover3 from '../../assets/images/cover-1.png';
-
 const Slider = () => {
-  const images = [
-    {
-      original: cover1,
-    },
-    {
-      original: cover2,
-    },
-    {
-      original: cover3,
-    },
-    {
-      original: cover1,
-    },
-    {
-      original: cover1,
-    },
-  ];
+  const { playlists, changeId, songIndex } = useContext(Context);
+
+  const [slideIndex, setSlideIndex] = useState(0);
+
+  const getImages = () => {
+    let imagesArray = [];
+    playlists.map(
+      ({ photo, id }) =>
+        (imagesArray = [
+          ...imagesArray,
+          {
+            original: require(`../../assets/images/${photo}`),
+            imagesId: id,
+          },
+        ])
+    );
+
+    return imagesArray;
+  };
+
+  const images = getImages();
+  const gallerySlider = useRef();
+
+  useEffect(() => {
+    gallerySlider.current.slideToIndex(songIndex);
+  }, [songIndex]);
+
+  useEffect(() => {
+    changeId(images[slideIndex].imagesId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [slideIndex]);
+
   return (
     <StyledSlider>
       <ImageGallery
@@ -33,6 +46,8 @@ const Slider = () => {
         showThumbnails={false}
         showFullscreenButton={false}
         showPlayButton={false}
+        onSlide={(id) => id !== slideIndex && setSlideIndex(id)}
+        ref={gallerySlider}
       />
     </StyledSlider>
   );

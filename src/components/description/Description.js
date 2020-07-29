@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { StyledDescription, Title, Artist } from './Description.styled';
+import Context from '../../store/PlaylistContext';
 
 const Description = () => {
+  const {
+    filteredList: { title, album },
+  } = useContext(Context);
+
   return (
     <StyledDescription>
-      <Title>test</Title>
-      <Artist>test</Artist>
+      <Title>{title}</Title>
+      <Artist>{album}</Artist>
     </StyledDescription>
   );
 };
