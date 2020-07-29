@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.js": "/kk-player-task/static/js/main.21134b1b.chunk.js",
+    "main.js.map": "/kk-player-task/static/js/main.21134b1b.chunk.js.map",
+    "runtime-main.js": "/kk-player-task/static/js/runtime-main.4ae6856d.js",
+    "runtime-main.js.map": "/kk-player-task/static/js/runtime-main.4ae6856d.js.map",
+    "static/css/2.40a775a0.chunk.css": "/kk-player-task/static/css/2.40a775a0.chunk.css",
+    "static/js/2.a3ce7aba.chunk.js": "/kk-player-task/static/js/2.a3ce7aba.chunk.js",
+    "static/js/2.a3ce7aba.chunk.js.map": "/kk-player-task/static/js/2.a3ce7aba.chunk.js.map",
+    "index.html": "/kk-player-task/index.html",
+    "precache-manifest.e5ed273523831db25c415f70be9df618.js": "/kk-player-task/precache-manifest.e5ed273523831db25c415f70be9df618.js",
+    "service-worker.js": "/kk-player-task/service-worker.js",
+    "static/css/2.40a775a0.chunk.css.map": "/kk-player-task/static/css/2.40a775a0.chunk.css.map",
+    "static/js/2.a3ce7aba.chunk.js.LICENSE.txt": "/kk-player-task/static/js/2.a3ce7aba.chunk.js.LICENSE.txt",
+    "static/media/Play_active.png": "/kk-player-task/static/media/Play_active.d522478d.png",
+    "static/media/back_ico.svg": "/kk-player-task/static/media/back_ico.6d8b1009.svg",
+    "static/media/bg_image.jpg": "/kk-player-task/static/media/bg_image.52d51b7d.jpg",
+    "static/media/cover-1.png": "/kk-player-task/static/media/cover-1.8e344a79.png",
+    "static/media/cover.png": "/kk-player-task/static/media/cover.aa246fdc.png",
+    "static/media/hide_ico.svg": "/kk-player-task/static/media/hide_ico.efd35a48.svg",
+    "static/media/more_ico.svg": "/kk-player-task/static/media/more_ico.68d542b2.svg",
+    "static/media/next_ico.svg": "/kk-player-task/static/media/next_ico.908e77ad.svg",
+    "static/media/playlist_ico.svg": "/kk-player-task/static/media/playlist_ico.d560ea63.svg",
+    "static/media/previous_ico.svg": "/kk-player-task/static/media/previous_ico.61530e1d.svg",
+    "static/media/repeat_ico.svg": "/kk-player-task/static/media/repeat_ico.f24e6532.svg",
+    "static/media/sample.mp3": "/kk-player-task/static/media/sample.2ca80224.mp3",
+    "static/media/shuffle_ico.svg": "/kk-player-task/static/media/shuffle_ico.9cca0f11.svg",
+    "static/media/unreleased_cover.png": "/kk-player-task/static/media/unreleased_cover.a2195768.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4ae6856d.js",
+    "static/css/2.40a775a0.chunk.css",
+    "static/js/2.a3ce7aba.chunk.js",
+    "static/js/main.21134b1b.chunk.js"
+  ]
+}
